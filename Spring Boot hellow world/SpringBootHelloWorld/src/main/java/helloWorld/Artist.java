@@ -13,6 +13,7 @@ public class Artist {
 	@Column(name = "id")
 	private Integer id;
 	
+	@Column(name = "name")
 	private String Name;
 	
 	public Integer getId() {

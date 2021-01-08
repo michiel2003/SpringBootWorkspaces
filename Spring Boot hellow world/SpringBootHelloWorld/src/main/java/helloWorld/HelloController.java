@@ -35,6 +35,7 @@ public class HelloController {
 	    Iterable<Artist> iterable = artistRep.findByName(name);
 	    String items = "<ul>";
 	    for(Artist artist:iterable) {
+	    	System.out.println(artist.getName() + "*****");
 	    		items = items + "<li>" + artist.getName() + "</li>";
 	    }
 	    items = items + "</ul>";
