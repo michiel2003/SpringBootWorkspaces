@@ -1,0 +1,12 @@
+package helloWorld;
+
+import org.springframework.data.repository.CrudRepository;
+
+import helloWorld.Artist;
+
+public interface ArtistRep extends CrudRepository<Artist, Integer>{
+	
+	List<Artist> findByName(String name);
+
+	
+}
